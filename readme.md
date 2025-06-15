@@ -2,17 +2,17 @@
 
 BTuple 
 
-# Operadores Aritmeticas
+* Operadores Aritmeticas
 Mul<br>
 Sub<br>
 
-# Operadores Lógicas
+* Operadores Lógicas
 Not<br>
 Or<br>
 
 Fst<br>
 Snd<br>
-# Operadores Relacionais 
+* Operadores Relacionais 
 BGt<br>
 BEq<br>
 
