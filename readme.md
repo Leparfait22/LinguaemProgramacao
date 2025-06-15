@@ -1,59 +1,55 @@
-## FUncionalidades Implementadas 
+## Funcionalidades Implementadas 
 
 BTuple 
 
---Operadores Aritmeticas
-Mul
-Sub
---Operadores Lógicas
-Not
-Or
+# Operadores Aritmeticas
+Mul<br>
+Sub<br>
 
-Fst
-Snd
---Operadores Relacionais 
-BGt
-BEq
+# Operadores Lógicas
+Not<br>
+Or<br>
+
+Fst<br>
+Snd<br>
+# Operadores Relacionais 
+BGt<br>
+BEq<br>
 
 TokenComa
 
 
 ## Testar as funcionalidades 
 
-Tuplas :
-eval (Fst (BTuple (Num 3) (Num 5))) → 3
+Tuplas :<br>
+eval (Fst (BTuple (Num 3) (Num 5))) → 3<br>
 
-Mul:
-eval (Mul (Num 3) (Num 4)) → Num 12
+Mul:<br>
+eval (Mul (Num 3) (Num 4)) → Num 12<br>
 
-Sub:
-eval (Sub (Num 10) (Num 4)) → Num 6
+Sub:<br>
+eval (Sub (Num 10) (Num 4)) → Num 6<br>
 
-Not:
-eval (Not BTrue) → BFalse
+Not:<br>
+eval (Not BTrue) → BFalse<br>
+eval (Not BFalse) → BTrue<br>
 
-eval (Not BFalse) → BTrue
-Or:
-eval (Or BTrue BFalse) → BTrue
+Or:<br>
+eval (Or BTrue BFalse) → BTrue<br>
+eval (Or BFalse BFalse) → BFalse<br>
 
-eval (Or BFalse BFalse) → BFalse
+Fst:<br>
+eval (Fst (BTuple (Num 3) (Num 5))) → Num 3<br>
 
-Fst:
-eval (Fst (BTuple (Num 3) (Num 5))) → Num 3
+Snd:<br>
+eval (Snd (BTuple (Num 3) (Num 5))) → Num 5<br>
 
-Snd:
-eval (Snd (BTuple (Num 3) (Num 5))) → Num 5
+BGt:<br>
+eval (BGt (Num 5) (Num 3)) → BTrue<br>
+eval (BGt (Num 2) (Num 4)) → BFalse<br>
 
-BGt:
-eval (BGt (Num 5) (Num 3)) → BTrue
-
-eval (BGt (Num 2) (Num 4)) → BFalse
-
-BEq:
-eval (BEq (Num 5) (Num 5)) → BTrue
-
-eval (BEq (Num 5) (Num 2)) → BFalse
-
-eval (BEq BTrue BFalse) → BFalse
-
-eval (BEq BTrue BTrue) → BTrue
+BEq:<br>
+eval (BEq (Num 5) (Num 5)) → BTrue<br>
+eval (BEq (Num 5) (Num 2)) → BFalse<br>
+eval (BEq BTrue BFalse) → BFalse<br>
+eval (BEq BTrue BTrue) → BTrue<br>
